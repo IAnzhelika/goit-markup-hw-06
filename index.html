@@ -475,24 +475,32 @@
         </ul>
     </div>
      <div class="subscrite-form">
-        <p>
+        <p class="text-footer">
         Подпишитесь на рассылку
         </p>
         <form class="form">
-            
-            <label for="email"></label>
+           
+            <label  for="email">
+                
+                
           <input
            class="form-input" 
           type="email" 
           name="mail"
            id="mail" 
            placeholder="E-mail"
-           autofocus/>
-        
-        
+           />
+       
+        </label>
         
        
-       <button type="submit">Подписаться</button>
+       <button class="footer-button" type="submit">Подписаться
+        <svg class="button-modal">
+            <use href="/image/Market-iteams/symbol-defs.svg#icon-modal1">
+
+            </use>
+        </svg>
+       </button>
         </form>
      </div>
     </section>
@@ -500,38 +508,78 @@
 </footer>
 <div class="modal is-hidden" id="modal" data-modal >
     <div class="modal-content" id="modal-content">
-        <button data-modal-close type="button"> 
-   X
+        <button data-modal-close type="button" >
+        <svg class="modal-over">
+            <use href="/image/Market-iteams/symbol-defs.svg#icon-modal2">
+
+            </use>
+        </svg>
+        
+   
         </button>
     
-    <form class="forms" >
+    <form action="#" class="forms" >
         <p class="form-name"> Оставьте свои данные, мы вам перезвоним</p>
         <div class="form-filed">
-            <label for="name">Имя</label>
-                
-                <input type="text" name="name" id="name"/>
-           
+            <label  class="form-filed-label" for="name">
+                Имя
+                <div class="modal-name">
+                <input 
+                class="modal-form-input"
+                type="text" 
+                name="name" 
+                id="name"
+                />
+                <svg class="modal-form">
+                    <use href="/image/Market-iteams/symbol-defs.svg#icon-modal6">
+
+                    </use>
+                </svg>
+                </div>
+        </label>
         </div>
         <div class="form-filed">
-            <label for="tel">tel</label>
-            
-            <input type="tel" name="tel" id="tel"/>
-        
+            <label class="form-filed-label" for="tel">
+                Телефон
+            <div class="modal-name">
+            <input
+            class="modal-form-input" 
+            type="tel"
+             name="tel" 
+             id="tel"
+               />
+              <svg class="modal-form">
+                <use href="/image/Market-iteams/symbol-defs.svg#icon-modal5">
+                </use>
+              </svg>
+            </div>
+        </label>
         </div>
        <div class="form-filed">
-    <label for="E-mail">E-mail</label>
-   
-    <input type="email" name="email" id="email">
-
+    <label  class="form-filed-label" for="E-mail">
+        Почта
+       <div class="modal-name">
+    <input 
+    class="modal-form-input"
+    type="email"
+     name="email"
+      id="email"
+       class="modal-form-input"/>
+        <svg class="modal-form">
+            <use href="/image/Market-iteams/symbol-defs.svg#icon-modal4">
+            </use>
+        </svg>
+        </div>
+</label>
 </div>
 <div class="form-filed">
-    <label for="comment">Комментарий</label>
+    <label  class="form-filed-label" for="comment">Комментарий</label>
 
    <textarea name="comment" id="comment"  placeholder="Ведите текст"></textarea>
 
 </div>
 <input type="checkbox" name="polici" id="polici">
-    <label for="polici">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+    <label class="form-filed-label" for="polici">Соглашаюсь с рассылкой и принимаю Условия договора</label>
     
    
  <button type="submit">Отправить</button>
