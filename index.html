@@ -349,47 +349,47 @@
             <ul class="custumers">
             <li class="custumer">
                 <a href="#" class="link-customer">
-                   <svg class="icons-customer">
-                    <use href="/image/Market-iteams/symbol-defs.svg#icon-yago">
+                   <svg class="icans-customer">
+                    <use href="/image/Market-iteams/SVG/symbol-defs.svg#icon-yago">
                     </use>
                    </svg>
                 </a> </li>
                 <li class="custumer">
                     <a href="#" class="link-customer">
-                        <svg class="icons-customer">
-                            <use href="/image/Market-iteams/symbol-defs.svg#icon-companyc">
+                        <svg class="icans-customer">
+                            <use href="/image/Market-iteams/SVG/symbol-defs.svg#icon-companyc">
                             </use>
                         </svg>
                     </a>
                 </li>
                 <li class="custumer">
                     <a href="#" class="link-customer">
-                        <svg class="icons-customer">
-                            <use href="/image/Market-iteams/symbol-defs.svg#icon-company">
+                        <svg class="icans-customer">
+                            <use href="/image/Market-iteams/SVG/symbol-defs.svg#icon-company">
+                            </use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="custumer"> 
+                    <a href="#" class="link-customer">
+                        <svg class="icans-customer">
+                            <use href="/image/Market-iteams/SVG/symbol-defs.svg#icon-foster">
                             </use>
                         </svg>
                     </a>
                 </li>
                 <li class="custumer">
                     <a href="#" class="link-customer">
-                        <svg class="icons-customer">
-                            <use href="/image/Market-iteams/symbol-defs.svg#icon-foster">
-                            </use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="custumer">
-                    <a href="#" class="link-customer">
-                        <svg class="icons-customer">
-                            <use href="/image/Market-iteams/symbol-defs.svg#icon-brand">
+                        <svg class="icans-customer">
+                            <use href="/image/Market-iteams/SVG/symbol-defs.svg#icon-brand">
                             </use>
                         </svg>
                     </a>
                 </li>
             <li class="custumer">
                 <a href="#" class="link-customer">
-                    <svg class="icons-customer">
-                        <use href="/image/Market-iteams/symbol-defs.svg#icon-companytagline">
+                    <svg class="icans-customer">
+                        <use href="/image/Market-iteams/SVG/symbol-defs.svg#icon-companytagline">
                         </use>
                     </svg>
                 </a>
@@ -529,8 +529,9 @@
                 type="text" 
                 name="name" 
                 id="name"
+                placeholder=" "
                 />
-                <svg class="modal-form">
+                <svg class="modal-form" width="18" height="18">
                     <use href="/image/Market-iteams/symbol-defs.svg#icon-modal6">
 
                     </use>
@@ -547,8 +548,9 @@
             type="tel"
              name="tel" 
              id="tel"
+              placeholder=" "
                />
-              <svg class="modal-form">
+              <svg class="modal-form" width="18" height="18">
                 <use href="/image/Market-iteams/symbol-defs.svg#icon-modal5">
                 </use>
               </svg>
@@ -564,8 +566,8 @@
     type="email"
      name="email"
       id="email"
-       class="modal-form-input"/>
-        <svg class="modal-form">
+       placeholder=" "/>
+        <svg class="modal-form" width="18" height="18">
             <use href="/image/Market-iteams/symbol-defs.svg#icon-modal4">
             </use>
         </svg>
@@ -575,14 +577,19 @@
 <div class="form-filed">
     <label  class="form-filed-label" for="comment">Комментарий</label>
 
-   <textarea name="comment" id="comment"  placeholder="Ведите текст"></textarea>
+   <textarea name="comment" id="comment" class="modal-form-comment" placeholder="Ведите текст"></textarea>
 
 </div>
-<input type="checkbox" name="polici" id="polici">
-    <label class="form-filed-label" for="polici">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+<input  
+required
+ class="modal-check visually-hidden "
+type="checkbox" 
+name="polici"
+ id="polici">
+    <label    for="polici" class="modal-form-polici"  >Соглашаюсь с рассылкой и принимаю <a class="modal-polici" href=" ">Условия договора </a></label>
     
    
- <button type="submit">Отправить</button>
+ <button class="button-send" type="submit">Отправить</button>
     </form>
     </div>
 </div>
